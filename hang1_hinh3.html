@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="cssStyles/bootstrap.min.css" />
+    <script type="text/javascript" src="jScripts/jquery.min.js"></script>
+    <script type="text/javascript" src="jScripts/bootstrap.min.js"></script>
+    <link href="cssStyles/homeCSS.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link href="cssStyles/font-awesome.min.css" rel="stylesheet" />
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link href="d/menuCuoi.css" rel="stylesheet" />
+    <link href="d/menu.css" rel="stylesheet" />
+    <link href="d/cuon.css" rel="stylesheet" />
+    <script type="text/javascript">
+        (function () {
+            $('#cuon').click(function () {
+                $('body,html').animate({ scrollTop: 0 }, 600);
+                return false;
+            })
+        })
+            (jQuery);
+        $(window).scroll(function () {
+            if ($(window).scrollTop() == 0) {
+                $('#cuon').stop(false, true).fadeOut(300);
+            } else {
+                $('#cuon').stop(false, true).fadeIn(300);
+            }
+        });
+    </script>
+
+    <title>
+        TRÀ ALISAN GONG CHA
+    </title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://gongcha.com.vn/wp-content/uploads/2018/02/Trà-sữa-Oolong-3J-1.png" />
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+
+        #ly {
+            width: 95%;
+        }
+
+        #Cailyly {
+            width: 50%;
+        }
+
+        table {
+            border: 1px solid #ddd;
+            width: 100%;
+            margin-bottom: 22px;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+            table tr {
+                display: table-row;
+                vertical-align: inherit;
+                border-color: inherit;
+                border: 1px solid #ddd;
+            }
+
+        tr td {
+            text-align: center;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            text-align: center;
+            color: #b81f32;
+            border: 1px solid #ddd;
+        }
+
+        .center {
+            position: absolute;
+            top: 27%;
+            font-size: 18px;
+        }
+
+        p {
+            font-style: oblique;
+        }
+
+        #khongNghien {
+            font-style: inherit;
+        }
+
+        h2 {
+            color: white;
+            width: 369px;
+            text-align: right;
+            font-weight: 600;
+        }
+
+        #hinhbenner {
+            height: 50%;
+            background-size: cover;
+            max-height: 473px;
+            width: 100%;
+        }
+
+        #hinhbenner {
+            max-height: 303px;
+        }
+
+        #banner {
+            padding-top: 2px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+            .sticky + .content {
+                padding-top: 0px;
+            }
+    </style>
+</head>
+<body>
+    <!--menuDau-->
+    <div id="menudau" class="container">
+        <div class="container">
+            <nav class="navbar navbar-default">
+
+                <div class="navbar-header">
+                    <img id="logodau" nama="logo gong cha" class="navbar-brand" src="Images/img_trangchu/logo.png" />
+                </div>
+                <div id="giuaMenu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../do_an_web/tranh_Chu.html">TRANG CHỦ</a></li>
+                        <li><a href="../do_an_web/gioiThieu.html"><span></span>GIỚI THIỆU</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">THỰC ĐƠN<span></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../do_an_web/thuc_Don.html">Món mới</a></li>
+                                <li><a href="#">Thức uống theo mùa</a></li>
+                                <li><a href="#">Menu hiện tại</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../do_an_web/tintuc_uudai.html">TIN TỨC & ƯU ĐÃI</a></li>
+                        <li><a href="../do_an_web/cua_hang.html">CỬA HÀNG</a></li>
+                        <li><a href="#">TUYỂN DỤNG</a></li>
+                        <li><a href="#">LIÊN HỆ</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-certer">
+                        <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                    <!--nút search-->
+                    <div class="search-btn-wrap">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a id="search" name="nút search" href="#" class="btn-search">
+                                    <span class="fa fa-search">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!--banner-->
+    <div>
+        <div id="banner">
+
+            <img id="hinhbenner" src="Images/img_thucDon/trangh1/banner-web-trong_FN-01.jpg" />
+        </div>
+        <div class="center container">
+            <h2>
+                TRÀ ALISAN GONG CHA
+            </h2>
+
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <div class="container" id="Cailyly">
+                <div class="text-left">
+                    <h3>
+                        TRÀ ALISAN GONG CHA
+                    </h3>
+                </div>
+               
+                <div class="text-center">
+                    <img id="ly"src="Images/img_thucDon/h2_hg1.png" />
+                </div>
+
+            </div>
+            <div>
+                <p class="text-left" id="khongNghien">Trà bí đao thanh mát, ngọt ngào kết hợp chung với lớp kem sữa mặn.</p>
+            </div>
+            <div>
+                <h4>
+                    Thông tin
+                </h4>
+            </div>
+            <div>
+                <table class="text-center">
+
+                    <tr class="ttr">
+                        <th>Tên món</th>
+                        <th>Size</th>
+                        <th>
+                            Giá tiền<br />
+                            (VNĐ)
+                        </th>
+                        <th>
+                            Lượng đường<br />
+                            (g)
+                        </th>
+                        <th>Caffeine</th>
+                        <th>
+                            Calories<br />
+                            (Có đường)
+                        </th>
+                        <th>
+                            Calories<br /><
+                            (Không đường)
+                        </th>
+
+                    </tr>
+
+
+                    <tr class="ttr">
+                        <td rowspan="3">Trà Oolong Gong Cha</td>
+                        <td>M</td>
+                        <td>47.000</td>
+                        <td>22.7</td>
+                        <td>46.7</td>
+                        <td>266.1</td>
+                        <td>181.3</td>
+
+
+                    </tr>
+
+                    <tr class="ttr">
+                        <td>L</td>
+                        <td>53.000</td>
+                        <td>31.5</td>
+                        <td>68.4</td>
+                        <td>360.9</td>
+                        <td>242.2</td>
+
+                    </tr>
+                    <tr class="ttr">
+
+                        <td>XL</td>
+                        <td>53.000</td>
+                        <td>37.6</td>
+                        <td>0.0</td>
+                        <td>380.9</td>
+                        <td>380.9</td>
+
+                    </tr>
+                </table>
+
+            </div>
+            <div>
+                <p>(*) Thông tin dinh dưỡng chỉ mang tính chất tham khảo.</p>
+            </div>
+
+        </div>
+
+    </div>
+    <!--menu cuối-->
+    <div id="to">
+        <div class="container-fluid" id="conter">
+            <div class="row">
+                <div class="col-sm-3" id="cotkeCuoi">
+                    <a href="=#">
+                        <img src="Images/img_TT&uuDai/logocuoi.png" />
+                    </a>
+                </div>
+                <div class="col-sm-9" id="cotCuoi">
+                    <nav class="navbar navbar-default" id="navCuoi">
+                        <div class="container-fluid">
+
+                            <ul class="nav navbar-nav">
+                                <li><a href="../do_an_web/gioiThieu.html" style="border-right: 1px solid #333;">Giới Thiệu</a></li>
+                                <li><a href="../do_an_web/tintuc_uudai.html" style="border-right: 1px solid #333;">Tin Tức & Ưu Đãi</a></li>
+                                <li><a href="../do_an_web/thuc_Don.html" style="border-right: 1px solid #333;">Thực Đơn</a></li>
+                                <li><a href="#" style="border-right: 1px solid #333;">Tuyển Dụng</a></li>
+                                <li><a href="#" style="border-right: 1px solid #333;">Liên Hệ</a></li>
+                            </ul>
+                        </div>
+                        <div id="hopThu">
+                            <span class="mails">
+                                <i class="fa fa-envelope">
+                                </i>
+                                <a href="mailto:info@gongcha.com.vn">
+                                    info@gongcha.com.vn
+                                </a>
+                            </span>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end page-->
+
+    <a href="#"><i class="fa fa fa-angle-double-up" id="cuon" aria-hidden="true"></i></a>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>

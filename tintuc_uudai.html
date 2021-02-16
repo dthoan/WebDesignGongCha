@@ -1,0 +1,1464 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="cssStyles/bootstrap.min.css" />
+    <script type="text/javascript" src="jScripts/jquery.min.js"></script>
+    <script type="text/javascript" src="jScripts/bootstrap.min.js"></script>
+    <link href="cssStyles/homeCSS.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link href="cssStyles/font-awesome.min.css" rel="stylesheet" />
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link href="d/menuCuoi.css" rel="stylesheet" />
+    <link href="d/menu.css" rel="stylesheet" />
+    <link href="d/cuon.css" rel="stylesheet" />
+    <script type="text/javascript">
+        (function () {
+            $('#cuon').click(function () {
+                $('body,html').animate({ scrollTop: 0 }, 600);
+                return false;
+            })
+        })
+            (jQuery);
+        $(window).scroll(function () {
+            if ($(window).scrollTop() == 0) {
+                $('#cuon').stop(false, true).fadeOut(300);
+            } else {
+                $('#cuon').stop(false, true).fadeIn(300);
+            }
+        });
+    </script>
+    <title>
+        Tin Tức & Ưu Đãi
+    </title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://gongcha.com.vn/wp-content/uploads/2018/02/Trà-sữa-Oolong-3J-1.png" />
+    <style>
+
+
+
+
+
+        .center {
+            position: absolute;
+            top: 30%;
+            font-size: 18px;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 100px;
+            left: 16px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+            img#logo.navbar-brand {
+                max-height: 70px;
+                margin: 50px 0;
+            }
+
+        .text-center {
+            text-align: center;
+            color: #fff;
+            background-color: #b81f32;
+            border-color: #a21b2c;
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: normal;
+            text-align: center;
+            background-image: none;
+            border: 1px solid transparent;
+            white-space: nowrap;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.6;
+            user-select: none;
+        }
+
+        #full {
+            background-color: #f5eee8;
+        }
+
+        .col-sm-4 {
+            padding-bottom: 15px;
+        }
+
+        #trang {
+            background-color: white;
+        }
+
+        h3 {
+            color: #a21b2c;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #771420;
+        }
+
+        a {
+            color: #a21b2c;
+            text-decoration: none !important;
+            color: #a21b2c;
+            font-weight: 700;
+            font-family: serif;
+        }
+
+        #chinhpading {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .cat {
+            background-color: red;
+            font-weight: 600;
+            background-color: red;
+            font-family: auto;
+            color: white;
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+
+        .bottom-left {
+            padding-bottom: 41px;
+            margin-left: 4px;
+        }
+
+        #chiTiet {
+            margin-top: -38px;
+        }
+
+        p {
+            font-size: 12px;
+            font-family: monospace;
+        }
+
+        #tt_ud {
+            width: 237px;
+        }
+
+
+
+        #tinTuc {
+            : url('Images/img_TT&uuDai/tin_tuc.jpg');
+            width: 30px;
+        }
+
+        #anThan {
+            text-align: center;
+        }
+
+        .col-sm-4 img {
+            max-width: 350px;
+            height: 258px;
+            height: 258px;
+        }
+
+        .bottom-left {
+            padding-bottom: 0px;
+            margin-left: 4px;
+        }
+
+        .modal {
+            max-width: 800px;
+        }
+
+        h6 {
+            color: red;
+            text-align: center;
+        }
+
+        #doGiua {
+            text-align: center;
+            color: red;
+            font-size: unset;
+            font-style: italic;
+            overflow: hidden;
+        }
+
+        p {
+            text-align: center;
+            font-size: 16px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #benTrai {
+            text-align: left;
+        }
+
+        #tt_ud {
+        }
+
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #c79f9f;
+        }
+
+        #maudam {
+            border-top: 2px solid #111;
+        }
+
+        #maunhat {
+            border-top: 1px solid #ddd;
+        }
+
+        #chuTrang {
+            padding-left: 50px;
+            color: white;
+        }
+
+            #chuTrang p a {
+                color: white
+            }
+
+        #xemThem {
+            text-align: center !important;
+            padding-bottom: 50px;
+            padding-top: 50px;
+        }
+
+        .modal {
+        }
+
+        span {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+
+</head>>
+<body>
+    <div id="menudau" class="container">
+        <div class="container">
+            <nav class="navbar navbar-default">
+
+                <div class="navbar-header">
+                    <img id="logodau" nama="logo gong cha" class="navbar-brand" src="Images/img_trangchu/logo.png" />
+                </div>
+                <div id="giuaMenu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../do_an_web/tranh_Chu.html">TRANG CHỦ</a></li>
+                        <li><a href="../do_an_web/gioiThieu.html"><span></span>GIỚI THIỆU</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">THỰC ĐƠN<span></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../do_an_web/thuc_Don.html">Món mới</a></li>
+                                <li><a href="../do_an_web/thuc_Don.html" ">Thức uống theo mùa</a></li>
+                                <li><a href="../do_an_web/thuc_Don.html" ">Menu hiện tại</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../do_an_web/tintuc_uudai.html">TIN TỨC & ƯU ĐÃI</a></li>
+                        <li><a href="../do_an_web/cua_hang.html">CỬA HÀNG</a></li>
+                        <li><a href="#">TUYỂN DỤNG</a></li>
+                        <li><a href="#">LIÊN HỆ</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-certer">
+                        <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                    <!--nút search-->
+                    <div class="search-btn-wrap">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a id="search" name="nút search" href="#" class="btn-search">
+                                    <span class="fa fa-search">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="full">
+        <!--banner-->
+        <div id="banner">
+            <img src="Images/img_TT&uuDai/banner.png" style="
+    padding-top: 2px;" />
+            <div class="center" id="chuTrang">
+                <h2>
+                    TIN TỨC & ƯU ĐÃI
+                </h2>
+                <p>
+                    <a href="#">
+                        Tin tức mới từ Gong Cha
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <hr id="maudam" />
+            </div>
+            <div id="tt_ud" class="container">
+
+
+
+
+
+                <div>
+                    <a href="#">
+                        <img src="Images/img_TT&uuDai/Screenshot_1.png" />
+                    </a>
+                </div>
+
+
+
+
+
+
+            </div>
+            <div class="container">
+                <hr id="maunhat" />
+            </div>
+        </div>
+
+        <div id="hinh" class="container">
+            <!--ẩn thân-->
+            <!--hang1-->
+            <div id="nhiuHinh">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!--hinh 1-->
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+
+                                    <a href="#ex1" rel="modal:open">
+                                        <img nam="xin chào việt nam" id="xinChao" src="Images/img_trangchu/xinchao.jpg" />
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div id="trang">
+                                <div id="chinhpading">
+                                    close--!>
+                                    <div id="ex1" class="modal">
+
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <h5>
+                                                                MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ
+
+                                                                <hr />
+
+                                                            </h5>
+                                                        </div>
+                                                        <div>
+                                                            <h6>
+                                                                “MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ”
+                                                            </h6>
+                                                        </div>
+                                                        <div id="doGiua">
+                                                            Mừng sinh nhật lần thứ 4 của thương hiệu Gong Cha tại Việt Nam, Gong Cha mang đến cho
+                                                            Fan nhiều ưu đãi hấp dẫn như một lời tri ân dành cho khách hàng đã yêu mến Gong Cha trong
+                                                            suốt bốn năm hoạt động vừa qua.
+                                                        </div>
+                                                        <div>
+                                                            <p>
+                                                                Hoạt động thú vị nhất phải kể đến đó là chương trình “Mừng sinh nhật Gong Cha –
+                                                                Săn Oppa về nhà”, được diễn ra đúng vào ngày sinh nhật Gong Cha (11/10/2018). Đến
+                                                                với cửa hàng vào ngày sinh nhật Gong Cha, khách hàng sẽ có cơ hội mua thức uống
+                                                                Popcorn Tea Latte với giá ưu đãi cực “hot” – chỉ 45.000đ. Ngoài ra, bạn sẽ còn được
+                                                                nhận ngay cup sleeve (bọc ly giấy) có hình ảnh đại sứ thương hiệu Park Seo Jun kèm theo
+                                                                một mã cào trúng thưởng mặt sau với nhiều phần quà thật xinh xắn và hấp dẫn!
+                                                            </p>
+                                                        </div>
+                                                        <div>
+                                                            <img src="Images/img_TT&uuDai/trang_1/h1.jpg" />
+                                                            <p>
+                                                                Cách thức tham gia chương trình cực kì đơn giản: Bước 1: Mua ngay sản phẩm Popcorn
+                                                                Tea Latte – thức uống chỉ dành riêng cho sinh nhật Gong Cha với giá khuyến mãi chỉ
+                                                                45.000đ Bước 2: Nhận ngay cup sleeve Park Seo Jun với lớp cào tráng bạc ở mặt sau
+                                                            </p>
+                                                        </div>
+                                                        <div>
+                                                            <img src="Images/img_TT&uuDai/trang_1/h2.png" />
+                                                            <p class="text-left">
+                                                                Bước 3: Cào lớp tráng bạc để thấy ngay QR code ở dưới lớp tráng bạc. Dùng ứng dụng
+                                                                scan QR code (trên Facebook; Zalo…) và bạn sẽ tìm thấy ngay thông điệp trúng thưởng may mắn
+                                                            </p>
+                                                            <p class="text-left">
+                                                                Bước 4: Đưa nhân viên cashier xem màn hình thông báo trúng thưởng và điền một số thông tin
+                                                                theo yêu cầu để đổi ngay quà tặng xinh xắn từ Gong Cha
+                                                            </p>
+                                                            <p class="text-left"> Lưu ý:</p>
+                                                            <p>
+                                                                - Chương trình chỉ áp dụng khi mua sản phẩm Popcorn Tea Latte tại cửa hàng hoặc sử dụng dịch vụ
+                                                                Gong Cha Delivery từ cửa hàng
+                                                            </p>
+                                                            <p class="text-left">
+                                                                - Khách hàng bắt buộc đổi quà tại cửa hàng mình đã mua sản phẩm Popcorn Tea Latte
+                                                            </p>
+                                                            <p class="text-left">
+                                                                - Chương trình chỉ áp dụng tại khu vực TP.HCM (không áp dụng cửa hàng Phan Xích Long)
+                                                            </p>
+                                                            <p class="text-left">- Thời gian áp dụng chương trình: 11/10/2018 – 31/10/2018</p>
+
+                                                            <p class="text-left">- Chương trình có thể kết thúc sớm hơn dự kiến vì số lượng quà tặng có hạn</p>
+
+                                                            <p class="text-left">
+                                                                - Không áp dụng khi mua sản phẩm qua các kênh giao hàng Now.vn; Grab Food; Lixi App; Lala...
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Link to open the modal-->
+
+                                    <div class="border-bottom pull-left open-popup hover" style="padding-bottom: 10px;" rel="modal:open" href="#ex1">
+                                        <a href="ex1" rel="modal:open" class="cat">
+                                            Tin Tức
+                                        </a>
+                                    </div>
+                                    <div id="chiTiet">
+                                        <a rel="modal:open" href="#ex1" class="pull-right open-popup hover" title="MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ">
+                                            CHI TIẾT <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a rel="modal:open" href="#ex1" class="pull-left open-popup hover" style="width: 289px;">
+                                            MỪNG SINH NHẬT GONG CHA – <br />SĂN OPPA VỀ NHÀ
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div id="bênTrai" class="post-excerpt" id="chinhpading" style=" padding-top: 35px; margin-right: 30px;">
+                                    <p style=" max-width: 357px; padding-top: 15px;">
+                                        “MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ”   Mừng sinh nhật lần thứ 4 của thương hiệu…
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--hinh 2-->
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+
+                                    <a href="#ex2" id="hang1_dong2" rel="modal:open">
+                                        <img nam="xin chào việt nam" id="xinChao" src="Images/img_TT&uuDai/hang1_hinh2.jpg" />
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div id="trang">
+                                <div id="chinhpading">
+                                    <!--close-->
+                                    <div id="ex2" class="modal">
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <h5>
+                                                                TƯNG BỪNG SINH NHẬT – RA MẮT MÓN MỚI – POPCORN TEA LATTE
+
+                                                                <hr />
+
+                                                            </h5>
+                                                        </div>
+                                                        <div>
+                                                            <h6>
+                                                                MỪNG SINH NHẬT GONG CHA, THƯỞNG THỨC MÓN MỚI VỚI GIÁ ƯU ĐÃI CỰC HẤP DẪN!
+                                                            </h6>
+                                                        </div>
+
+                                                        <div>
+                                                            <p>
+                                                                Hoạt động thú vị nhất phải kể đến đó là chương trình “Mừng sinh nhật Gong Cha –
+                                                                Săn Oppa về nhà”, được diễn ra đúng vào ngày sinh nhật Gong Cha (11/10/2018). Đến
+                                                                với cửa hàng vào ngày sinh nhật Gong Cha, khách hàng sẽ có cơ hội mua thức uống
+                                                                Popcorn Tea Latte với giá ưu đãi cực “hot” – chỉ 45.000đ. Ngoài ra, bạn sẽ còn được
+                                                                nhận ngay cup sleeve (bọc ly giấy) có hình ảnh đại sứ thương hiệu Park Seo Jun kèm theo
+                                                                một mã cào trúng thưởng mặt sau với nhiều phần quà thật xinh xắn và hấp dẫn!
+                                                            </p>
+                                                        </div>
+                                                        <div>
+                                                            <div>
+
+
+                                                                <img src="Images/img_TT&uuDai/dong1_hinh2/42844209_2239047056329099_4670362744933842944_o.jpg" />
+                                                            </div>
+                                                            <div>
+                                                                <img src="Images/img_TT&uuDai/dong1_hinh2/500X469.gốc-pop.jpg" />
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Link to open the modal-->
+                                    </div>
+                                    <div class="border-bottom pull-left open-popup hover" style="padding-bottom: 10px;" rel="modal:open" href="#ex2">
+                                        <a href="#ex2" class="cat" rel="modal:open">
+                                            Tin Tức
+                                        </a>
+                                    </div>
+                                    <div id="chiTiet">
+                                        <a rel="modal:open" href="ex2" id="hang1_dong2" class="pull-right open-popup hover" title="MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ">
+                                            CHI TIẾT <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a rel="modal:open" id="hang1_dong2" href="#ex2" class="pull-left open-popup hover" style="
+    width: 289px;">
+                                            TƯNG BỪNG SINH NHẬT – RA MẮT  – <br />MÓN MỚI –…
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div id="bênTrai" class="post-excerpt" id="chinhpading" style=" padding-top: 35px; margin-right: 30px;">
+                                    <p style=" max-width: 357px; padding-top: 15px; ">
+                                        MỪNG SINH NHẬT GONG CHA, THƯỞNG THỨC MÓN MỚI VỚI GIÁ ƯU ĐÃI CỰC HẤP DẪN! Gong Cha xin giới…
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--hinh 3-->
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+
+                                    <a href="#ex3" rel="modal:open">
+                                        <img nam="xin chào việt nam" id="xinChao" src="Images/img_TT&uuDai/hang1_hinh3.jpg" />
+                                    </a>
+
+
+                                </div>
+                            </div>
+                            <div id="trang">
+                                <div id="chinhpading">
+                                    close
+                                    <div id="ex3" class="modal">
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <div style="">
+                                                            <h4>
+                                                                RA MẮT DÒNG SẢN PHẨM KEM TRÀ SỮA
+
+                                                                <hr />
+
+                                                            </h4>
+                                                        </div>
+                                                        <p>
+                                                            Ngôi sao mới nhất của Gong Cha vừa tỏa sáng ngày hôm qua chính là món KEM TRÀ SỮA.
+                                                            Vậy công thức gì đã tạo nên món kem độc đáo không nơi nào có được này nhỉ?
+                                                        </p>
+                                                        <p>
+                                                            Mừng sinh nhật lần thứ 4 của thương hiệu Gong Cha tại Việt Nam, Gong Cha mang đến cho
+                                                            Fan nhiều ưu đãi hấp dẫn như một lời tri ân dành cho khách hàng đã yêu mến Gong Cha trong
+                                                            suốt bốn năm hoạt động vừa qua.
+                                                        </p>
+                                                        <p>
+                                                            Thật đơn giản: chỉ với trà sữa, sữa tươi, trân châu đen “homemade” từ Gong Cha mà các bạn vẫn hay
+                                                            thưởng thức nhưng nay với công thức bí truyền, Gong Cha lại mang đến một món mới tiên phong, với
+                                                            cuộc trải nghiệm vị giác khá thú vị: phải tranh thủ ăn nhanh lớp kem mát lạnh trước khi tan chảy
+                                                            thành vị trà sữa trân châu được ưa thích của Gong Cha.
+                                                        </p>
+                                                        <p>
+                                                            *Sản phẩm hiện đang được bán tại Gong Cha Thảo Điền Pearl và Gong Cha 496 - 498 An Dương Vương.
+                                                        </p>
+                                                        <div>
+                                                            <img src="Images/img_TT&uuDai/dong1_hinh3/42252217_2234069643493507_8510885791931564032_n.jpg" />
+
+                                                        </div>
+                                                        <div>
+                                                            <img src="Images/img_TT&uuDai/dong1_hinh3/kem-tra-sua-moi-01.jpg" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        Link to open the modal
+                                    </div>
+
+                                    <div class="border-bottom pull-left open-popup hover" style="padding-bottom: 10px;" rel="modal:open" href="#ex1">
+                                        <a href="#ex3" rel="modal:open" class="cat">
+                                            Tin Tức
+                                        </a>
+                                    </div>
+                                    <div id="chiTiet">
+                                        <a rel="modal:open" href="#ex3" class="pull-right open-popup hover" title="MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ">
+                                            CHI TIẾT <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a rel="modal:open" href="#ex3" class="pull-left open-popup hover" style="
+    width: 289px;">
+                                            RA MẮT DÒNG SẢN PHẨM KEM TRÀ SỮA
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div id="bênTrai" class="post-excerpt" id="chinhpading" style=" padding-top: 35px; margin-right: 30px;">
+                                    <p style=" max-width: 357px; padding-top: 15px;">
+                                        Ngôi sao mới nhất của Gong Cha vừa tỏa sáng ngày hôm qua chính là món KEM TRÀ SỮA. Vậy…
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--kết thúc 1 dòng
+                        </div>-->
+                    </div>
+
+                    <!--dong2-->
+                    <div id="nhiuHinh">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <!--hinh 1-->
+                                <div class="col-sm-4">
+                                    <div>
+                                        <div>
+
+                                            <a href="#ex4" rel="modal:open">
+                                                <img nam="xin chào việt nam" id="xinChao" src="Images/img_TT&uuDai/hang2_hinh1.jpg" />
+
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div id="trang">
+                                        <div id="chinhpading">
+                                            <!--close-->
+                                            <div id="ex4" class="modal">
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <div>
+                                                                <div>
+                                                                    <h5 style="font-size: 26px; font-family: monospace;color: red;font-style: italic;">
+                                                                        KHAI TRƯƠNG CỬA HÀNG 496 AN DƯƠNG VƯƠNG
+
+                                                                        <hr />
+
+                                                                    </h5>
+                                                                </div>
+                                                                <div>
+                                                                    <h5 style="font-size: 19px;font-weight: 500; text-align: :center; font-family:cursive;">
+                                                                        KHAI TRƯƠNG CỬA HÀNG GONG CHA 496 AN DƯƠNG VƯƠNG
+                                                                    </h5>
+                                                                </div>
+                                                                <div>
+                                                                    Thưởng thức Kem Trà Sữa trong không gian kiến trúc Đông Dương, bạn có từng nghĩ đến? Cửa hàng mới toanh của
+                                                                    Gong Cha tại số 496 An Dương Vương đã sẵn sàng phục vụ tất cả các Fan món Kem Trà Sữa “thần thánh” ngay trong
+                                                                    ngày khai trương đầu tiên. Các Fan mau “đặt gạch” hẹn hò nhé!
+                                                                </div>
+                                                                <div>
+                                                                    Trong ngày khai trương 04/10/2018 vào lúc 9h, Gong Cha An Dương Vương mang đến ưu đãi cho tất cả khách hàng như sau:
+                                                                    50 khách đầu tiên với hóa đơn từ 150.000đ nhận ngay 01 bình giữ nhiệt đậm chất "Gong Cha". 70 khách hàng tiếp theo sẽ
+                                                                    nhận quà với 1 trong 3 hạn mức sau: 30 phần quà gồm 01 ly sứ Gong Cha + 02 voucher 20% với đơn hàng từ 100.000đ 20 phần
+                                                                    quà gồm 01 gối Gong Cha + 03 voucher 20% với đơn hàng từ 150.000đ 20 phần quà gồm 01 nón bảo hiểm + 01 áo mưa + 02 voucher
+                                                                    20% với đơn hàng từ 200.000đ --------------------------- Địa chỉ: 496 An Dương Vương, P.4, Quận 5, TP.HCM
+                                                                </div>
+                                                                <i>
+                                                                    <div>
+                                                                        Lưu ý: **Mỗi khách hàng chỉ được chọn 01 phần quà trong 03 hạn mức trên, tương ứng với giá trị đơn hàng.
+                                                                    </div>
+                                                                    <div>
+                                                                        **Voucher 20% sử dụng sau 3 ngày khai trương tại cửa hàng Gong Cha 496 An Dương Vương
+                                                                    </div>
+                                                                    <div>
+                                                                        Một số hình ảnh về cửa hàng mới nhất từ Gong Cha nhé.
+                                                                    </div>
+                                                                </i>
+                                                                <div>
+                                                                    <img src="Images/img_TT&uuDai/dong2_hinh1/42850425_2239050702995401_1652766508570378240_o.jpg" />
+                                                                    <img src="Images/img_TT&uuDai/dong2_hinh1/43106733_2240913262809145_1735460486037635072_o.jpg" />
+                                                                    <img src="Images/img_TT&uuDai/dong2_hinh1/43124918_2240912742809197_5979641730792685568_o.jpg" />
+                                                                    <img src="Images/img_TT&uuDai/dong2_hinh1/43159210_2240912892809182_8385386838952509440_o.jpg" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Link to open the modal-->
+                                            </div>
+                                            <div class="border-bottom pull-left open-popup hover" style="padding-bottom: 10px;" rel="modal:open" href="#ex1">
+                                                <a href="#ex4" rel="modal:open" class="cat">
+                                                    Tin Tức
+                                                </a>
+                                            </div>
+                                            <div id="chiTiet">
+                                                <a rel="modal:open" href="#ex4" class="pull-right open-popup hover" title="MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ">
+                                                    CHI TIẾT <i class="fa fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a rel="modal:open" href="#ex4" class="pull-left open-popup hover" style="
+    width: 289px;">
+                                                    RA MẮT DÒNG SẢN PHẨM KEM TRÀ SỮA
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div id="bênTrai" class="post-excerpt" id="chinhpading" style=" padding-top: 35px; margin-right: 30px;">
+                                            <p style=" max-width: 357px; padding-top: 15px;">
+                                                Ngôi sao mới nhất của Gong Cha vừa tỏa sáng ngày hôm qua chính là món KEM TRÀ SỮA. Vậy…
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--hinh 2-->
+                                <div class="col-sm-4">
+                                    <div>
+                                        <div>
+
+                                            <a href="ex5" rel="modal:open">
+                                                <img name="xin chào việt nam" id="xinChao" src="Images/img_TT&uuDai/hang2_hinh2.jpg" />
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div id="trang">
+                                        <div id="chinhpading">
+                                            <!--close-->
+                                            <div id="ex5" class="modal">
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <div>
+                                                                <div>
+                                                                    <h5>
+                                                                        RA MẮT MÓN POPCORN TEA LATTE NHÂN DỊP GONG CHA SINH NHẬT LẦN THỨ 4
+
+                                                                        <hr />
+
+                                                                    </h5>
+                                                                </div>
+                                                                <div>
+                                                                    <b>
+                                                                        Bắp rang và Trà đen, bộ đôi mới của giới trà sữa! Bắp rang trở thành topping trà sữa,
+                                                                        tại sao không? Bạn đã thử qua món thức uống đặc biệt mừng sinh nhật Gong Cha?
+                                                                    </b>
+                                                                </div>
+                                                                <div>
+                                                                    Bắp rang từ lâu đã trở thành một món ăn “vui miệng” cho các tín đồ suốt ngày cứ “buồn miệng” không ngơi.
+                                                                    Và đặc biệt bắp rang là món ăn vặt duy nhất làm từ 100% ngũ cốc nguyên hạt. Nhưng làm sao để món bắp rang
+                                                                    kết hợp được với trà sữa, hãy để Gong Cha bật mí với bạn món thức uống vừa ra mắt nhé!
+                                                                </div>
+                                                                <div>
+                                                                    “Popcorn Tea Latte” hay có thể gọi nôm na là “Trà sữa bắp rang” là món thức uống mà Gong Cha ra mắt trong dịp
+                                                                    tròn 4 năm tuổi của mình tại Việt Nam. Món thức uống là sự kết hợp nguyên liệu giữa trà đen, sữa tươi và kem sữa
+                                                                    vị bắp rang. Một ly trà sữa bắp rang không thể thiếu đi được nhân vật chính của món thức uống chính là phần topping
+                                                                    bắp rang được nhập khẩu độc quyền từ Gong Cha Đài Loan.
+                                                                </div>
+                                                                <div>
+                                                                    Vị bắp rang mặn ngọt đặc trưng cùng độ giòn “rôm rốp” làm bàn cạnh bên cũng phải tò mò xem món thức uống đó
+                                                                    là gì? Nếu bạn là một “fan” luôn tìm kiếm món thức uống ngọt thanh thì đây chính là ngôi sao trong lòng bạn,
+                                                                    phần kem sữa vị bắp rang có vị ngọt cân bằng hoà quyện cùng lớp sữa tươi và trà đen không đường ở dưới.
+                                                                </div>
+                                                                <div>
+                                                                    Món thức uống có hai cách để thưởng thức nhưng bước đầu tiên vẫn là phải chấm bắp rang với lớp kem sữa
+                                                                    cảm giác mang lại như một món “snack” đặc biệt đi kèm với nước chấm thần thánh. Sau đó bạn khuấy đều
+                                                                    để phần trà đen và sữa tưoi quyện vào nhau hay thưởng thức bằng cách uống trực tiếp từ miệng ly để lớp
+                                                                    sữa tươi chạy từ đáy ly mang theo lớp trà và kem sữa. Một chút đắng nhẹ của trà, chút thanh mát của sữa
+                                                                    tươi được tròn vị trong lớp kem sữa vị bắp rang ngọt ngào mang lại sự kết hợp đồng điệu, tuyệt vời.
+                                                                    Thành phần trà đen hay còn gọi là hồng trà có trong “Popcorn Tea Latte” luôn là danh mục dễ tìm cho
+                                                                    các “fan” bự yêu thích sự đậm đà của hương vị khi kết hợp cùng các loại nguyên liệu khác. Hợp chất polysaccharide
+                                                                    có trong trà đen là một loại carbohydrate có tác dụng làm chậm quá trình hấp thụ đường của cơ thể.
+                                                                </div>
+                                                                <div>
+                                                                    Bắp rang lại có lượng calo và chất béo thấp trong khi có nhiều chất xơ và chất chống ô-xy hoá có lợi,
+                                                                    đặc biệt khi so sánh nó với các món ăn vặt thông thường khác. Bắp rang đã được ưa thích qua hàng nghìn năm,
+                                                                    từ tận những năm 3600 năm trước công nguyên. Với mỗi 10g bắp rang trong thức uống, Popcorn Tea Latte được
+                                                                    Gong Cha chú trọng liều lượng khi mang đến một sản phẩm vừa đủ dinh dưỡng, lạ miệng, hấp dẫn mà vẫn an toàn
+                                                                    cho sức khoẻ khi dùng.
+                                                                </div>
+                                                                <div>
+                                                                    Popcorn Tea Latte không chỉ thoả lòng người hâm mộ trà sữa khi mang đến một sự sáng tạo độc đáo và
+                                                                    khác biệt, sản phẩm này còn mở ra một khái niệm “topping” thật mới lạ - topping bắp rang. Hy vọng món
+                                                                    thức uống sẽ mang lại trải nghiệm mới lạ cho khách hàng yêu thích và ủng hộ Gong Cha trong suốt 4 năm
+                                                                    phát triển vừa qua.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Link to open the modal-->
+                                            </div>
+                                            <div class="border-bottom pull-left open-popup hover" style="padding-bottom: 10px;" rel="modal:open" href="#ex1">
+                                                <a href="ex5" class="cat" rel="modal:open">
+                                                    Tin Tức
+                                                </a>
+                                            </div>
+                                            <div id="chiTiet">
+                                                <a rel="modal:open" href="#ex5" class="pull-right open-popup hover" title="MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ">
+                                                    CHI TIẾT <i class="fa fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a rel="modal:open" href="#ex5" class="pull-left open-popup hover" style="
+    width: 289px;">
+                                                    RA MẮT MÓN POPCORN TEA LATTE NHÂN DỊP GONG CHA…
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div id="bênTrai" class="post-excerpt" id="chinhpading" style=" padding-top: 35px; margin-right: 30px;">
+                                            <p style=" max-width: 357px; padding-top: 15px;">
+                                                Bắp rang và Trà đen, bộ đôi mới của giới trà sữa! Bắp rang trở thành topping trà sữa, tại…
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--hinh 3 dòng 2-->
+                                <div class="col-sm-4">
+                                    <div>
+                                        <div>
+
+                                            <a href="#ex6" rel="modal:open">
+
+                                                <img src="Images/img_TT&uuDai/hang2_hinh3.jpg" />
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div id="trang">
+                                        <div id="chinhpading">
+                                            <!--close-->
+                                            <div id="ex6" class="modal">
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <div>
+                                                                <div>
+                                                                    <h5>
+                                                                        GONG CHA RA MẮT CHƯƠNG TRÌNH THÀNH VIÊN TRÊN ỨNG DỤNG ĐIỆN THOẠI
+
+                                                                        <hr />
+
+                                                                    </h5>
+                                                                </div>
+                                                                <div>
+                                                                    <h6>
+                                                                        <b>
+                                                                            ĐIỀU KHOẢN VÀ ĐIỀU KIỆN CHƯƠNG TRÌNH THÀNH VIÊN GONG CHA
+                                                                        </b>
+                                                                    </h6>
+                                                                </div>
+                                                                <div>
+                                                                    Chương trình thành viên qua ứng dụng Gong Cha được xây dựng với mong muốn mang lại cho khách hàng
+                                                                    những quyền lợi cao nhất mỗi khi
+                                                                    thưởng thức trà sữa Gong Cha. Khách hàng sẽ được hưởng những quyền lợi đặc biệt khi tham gia và trở thành Thành viên Gong Cha.
+                                                                    Chương trình chính thức có hiệu lực từ 24/08/2018.
+                                                                </div>
+                                                                <br />
+                                                                <div>
+                                                                    Quý khách vui lòng đọc kĩ những điều khoản ràng buộc khi tham gia vào chương trình<b> Gong Cha VN E-Members</b>.
+                                                                    Các điều khoản ràng buộc này được áp dụng đối với việc Quý khách truy cập và tham gia vào chương t
+                                                                    rình Gong Cha VN E-Members do Công ty TNHH Gong Cha Việt Nam thực hiện. Gong Cha Việt Nam có quyền thay đổi,
+                                                                    chỉnh sửa và/hoặc loại bỏ chương trình thành viên và/hoặc tất cả hoặc bất cứ hạng mục nào của các<b>điều khoảnsử dụng</b> này hoặc bất cứ chính sách, câu hỏi thường gặp, hoặc hướng dẫn liên quan đến Gong Cha VN E-Members
+                                                                    tại bất cứ thời điểm nào và theo quyền quyết định chỉ riêng của Gong Cha Việt Nam. Một khi đã tham gia
+                                                                    chương trình thành viên Gong Cha thông qua ứng dụng Gong Cha VN E-Members đồng nghĩa với việc Quý khách
+                                                                    chấp nhận các Điều Khoản Sử Dụng cũng như mọi thay đổi về chính sách. Do đó, Quý khách vui lòng cập nhập
+                                                                    thường xuyên các điều khoản trên website chính thức của Gong Cha (<<A>www.gongcha.com.vn</A>). Nếu Quý khách
+                                                                    không đồng ý với các Điều Khoản Sử Dụng, Quý khách phải chấm dứt việc tham gia vào chương trình thành viên Gong Cha.
+                                                                </div>
+                                                                <br />
+                                                                <div>
+                                                                    Gong Cha Việt Nam sẽ chỉ sử dụng thông tin cá nhân Quý khách đã cung cấp cho mục đích chăm sóc Khách hàng,
+                                                                    nâng cao trải nghiệm cũng như thiết kế các chương trình Quảng cáo phù hợp với từng nhu cầu khác nhau của
+                                                                    Quý khách. Gong Cha cam kết không sử dụng thông tin cá nhân ngoài các mục đích trên. Mọi thông tin cá
+                                                                    nhân sẽ được bảo mật ngoại trừ trường hợp cơ quan pháp luật yêu cầu..
+                                                                </div>
+                                                                <br />
+                                                                <div>
+                                                                    <b>
+                                                                        Tham gia vào chương trình thành viên qua ứng dụng Gong Cha
+                                                                    </b>
+                                                                </div>
+                                                                <br />
+                                                                <div>
+                                                                    5000 khách hàng đầu tiên tải APP và đăng nhập trên mỗi thiết bị, khách hàng sẽ được nhận ngay 01 E-voucher đổi
+                                                                    thức uống (mã code) trị giá 50.000VNĐ. Hạn sử dụng của E-voucher là 20 ngày (kể từ ngày đăng ký ứng dụng thành công).
+                                                                    <b>E-voucher chỉ có giá trị sử dụng 01 lần.</b>
+                                                                </div>
+                                                                <br />
+                                                                <div>
+                                                                    <B>Tích lũy điểm thưởng</B>
+                                                                </div>
+                                                                <br />
+                                                                <div>
+                                                                    Với mỗi 10.000VNĐ trên hóa đơn, khách hàng sẽ được tích lũy 01 điểm thưởng vào tài khoản trong ứng dụng Gong Cha VN E-Members.
+                                                                </div>
+                                                                <br />
+                                                                <div>
+                                                                    Điểm tích lũy được hiển thị trên APP và hóa đơn là điểm tích lũy từ chi tiêu trong vòng 365 ngày kể từ khi khách hàng tải
+                                                                    APP. Số điểm tích lũy này được thể hiện dưới dạng phần nguyên.
+                                                                </div>
+                                                                <br />
+                                                                <DIV>
+                                                                    Với mỗi 50 điểm tích lũy được, khách hàng sẽ nhận được 01 E-voucher (mã code) thức uống trị giá 50.000đ.
+                                                                    E-voucher này có thời hạn trong vòng 20 ngày kể từ ngày khách hàng nhận được thông báo.
+                                                                </DIV>
+                                                                <br />
+                                                                <span>
+                                                                    Điểm tích lũy đối với các khoản chi tiêu mua hàng tại các cửa hàng Gong Cha đáp ứng điều kiện tích lũy
+                                                                    sẽ được tự động thêm vào tài khoản của Quý khách chậm nhất trong 24 giờ kể từ khi phát sinh giao dịch tại cửa hàng.
+                                                                </span>
+                                                                <br />
+                                                                <span>
+                                                                    <b>
+                                                                        Nâng hạng thành viên
+                                                                    </b>
+                                                                </span>
+                                                                <br />
+                                                                <span>
+                                                                    Sau quá trình tải ứng dụng và tích lũy điểm thưởng, Quý khách sẽ được nâng hạng thành viên để hưởng nhiều ưu đãi đặc biệt hơn.
+
+                                                                    Hai hạng mức khi nâng hạng:<b> RED Membership và GOLD Membership</b>
+                                                                </span>
+                                                                <br />
+                                                                <span>
+                                                                    <b>
+                                                                        Hạng RED Membership:
+                                                                    </b>
+                                                                </span>
+                                                                <br />
+                                                                <span>
+                                                                    – Trong vòng 365 ngày kể từ ngày tải ứng dụng và tích điểm, khách hàng tích lũy đủ 500 điểm thưởng (tương đương 5.000.000VNĐ) sẽ được lên hạng RED Membership.
+                                                                </span>
+                                                                <br />
+                                                                <span>
+                                                                    – Sau khi nâng hạng, ứng dụng sẽ tự động trừ đi 500 điểm
+                                                                </span>
+                                                                <br />
+                                                                <span>
+                                                                    <b>Ưu đãi:</b>
+                                                                </span>
+                                                                <br />
+                                                                <span>
+                                                                    – Nhận ngay 01 voucher trị giá 50.000VNĐ với mỗi 50 điểm tích lũy được.
+                                                                </span>
+                                                                <br />
+                                                                <span>
+                                                                    – Được giảm giá trực tiếp 5% trên hóa đơn.
+                                                                </span>
+                                                                <br />
+                                                                <span>
+                                                                    –  Các ưu đãi hấp dẫn khác chỉ dành riêng cho hạng RED Membership.
+                                                                </span>
+
+                                                                <br />
+                                                                <span>
+                                                                    <b>Điều kiện giữ hạng RED Membership:</b>
+                                                                </span>
+                                                                <br />
+                                                                <span>
+                                                                    – Nếu tổng điểm tích lũy của khách hàng trong 365 ngày kể từ ngày nâng hạng thành RED Membership không đạt mức 500 điểm, khách hàng
+                                                                    sẽ trở lại làm thành viên tích điểm thông thường và số dư điểm tích lũy của khách hàng sẽ tự động trả lại về giá trị không (0).
+                                                                </span>
+                                                                <br />
+                                                                <span>
+                                                                    <b>
+                                                                        Lưu ý khác:
+                                                                    </b>
+                                                                </span>
+                                                                <br />
+                                                                <span>
+                                                                    – Thời điểm vừa nâng hạng lên RED Membership, điểm tích lũy của khách hàng sẽ tự động trừ đi 500 điểm. Khách hàng tiếp
+                                                                    tục tích điểm để giữ quyền lợi RED Membership trong 365 ngày từ ngày nâng hạng.
+                                                                </span>
+                                                                <br />
+                                                                <span>
+                                                                    <b>
+                                                                        Hạng mức GOLD Membership:
+                                                                    </b>
+                                                                </span>
+                                                                <br />
+                                                                <span>
+                                                                    – Trong vòng 365 ngày kể từ ngày nâng hạng thành RED Membership, khách hàng tích lũy đủ 1000 điểm thưởng (tương ứng
+                                                                    với 10.000.000VNĐ) sẽ được nâng lên hạng GOLD Membership.
+                                                                </span>
+                                                                <br />
+                                                                <span>
+                                                                    – Sau khi nâng hạng, ứng dụng sẽ tự động trừ đi 1000 điểm
+                                                                </span>
+                                                                <br />
+                                                                <span>
+                                                                    <<p>Ưu đãi:</p>
+                                                                    Nhận ngay 01 voucher trị giá 50.000VNĐ với mỗi 50 điểm tích lũy được.
+                                                                    <br />
+                                                                    Được giảm trực tiếp 10% trên hóa đơn.
+                                                                    <br />
+                                                                    Các ưu đãi hấp dẫn khác chỉ dành riêng cho hạng GOLD Membership.
+                                                                    <br />
+                                                                    Theo chính sách của riêng Gong Cha Việt Nam, khách hàng có thể nhận thêm
+                                                                    những ưu đãi hoặc quà tặng vào những dịp đặc biệt như Lễ, Tết, sinh nhật…). Quý khách
+                                                                    phải đồng ý nhận các thông tin khuyến mãi từ Gong Cha Việt Nam và có thể được yêu cầu cung cấp địa
+                                                                    chỉ email, điện thoại và địa chỉ hợp lệ để nhận các ưu đãi hoặc quà tặng này.
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Link to open the modal-->
+                                            </div>
+                                            <div class="border-bottom pull-left open-popup hover" style="padding-bottom: 10px;" rel="modal:open" href="#ex1">
+                                                <a href="#ex6" rel="modal:open" class="cat">
+                                                    Tin Tức
+                                                </a>
+                                            </div>
+                                            <div id="chiTiet">
+                                                <a rel="modal:open" href="#ex6" class="pull-right open-popup hover" title="MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ">
+                                                    CHI TIẾT <i class="fa fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a rel="modal:open" href="#ex6" class="pull-left open-popup hover" style="
+    width: 289px;">
+                                                    GIẢM GIÁ 20% VÀO THỨ TƯ HẰNG TUẦN
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div id="bênTrai" class="post-excerpt" id="chinhpading" style=" padding-top: 35px; margin-right: 30px;">
+                                            <p style=" max-width: 357px; padding-top: 15px;">
+                                                Gong Cha áp dụng giao hàng miễn phí, tiết kiệm thêm 20% trên tổng hóa đơn chỉ cần làm theo…
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--kết thúc dòng 2-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--dong3-->
+                    <div id="nhiuHinh">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <!--hinh 1-->
+                                <div class="col-sm-4">
+                                    <div>
+                                        <div>
+
+                                            <a href="#ex7" rel="modal:open">
+                                                <img nam="xin chào việt nam" id="xinChao" src="Images/img_TT&uuDai/hang3_hinh1.jpg" />
+
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div id="trang">
+                                        <div id="chinhpading">
+                                            <!--close-->
+                                            <div id="ex7" class="modal">
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <div>
+                                                                <div>
+                                                                    <h5>
+                                                                        MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ
+
+                                                                        <hr />
+
+                                                                    </h5>
+                                                                </div>
+                                                                <div>
+                                                                    <h6>
+                                                                        “MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ”
+                                                                    </h6>
+                                                                </div>
+                                                                <div id="doGiua">
+                                                                    Mừng sinh nhật lần thứ 4 của thương hiệu Gong Cha tại Việt Nam, Gong Cha mang đến cho
+                                                                    Fan nhiều ưu đãi hấp dẫn như một lời tri ân dành cho khách hàng đã yêu mến Gong Cha trong
+                                                                    suốt bốn năm hoạt động vừa qua.
+                                                                </div>
+                                                                <div>
+                                                                    <p>
+                                                                        Hoạt động thú vị nhất phải kể đến đó là chương trình “Mừng sinh nhật Gong Cha –
+                                                                        Săn Oppa về nhà”, được diễn ra đúng vào ngày sinh nhật Gong Cha (11/10/2018). Đến
+                                                                        với cửa hàng vào ngày sinh nhật Gong Cha, khách hàng sẽ có cơ hội mua thức uống
+                                                                        Popcorn Tea Latte với giá ưu đãi cực “hot” – chỉ 45.000đ. Ngoài ra, bạn sẽ còn được
+                                                                        nhận ngay cup sleeve (bọc ly giấy) có hình ảnh đại sứ thương hiệu Park Seo Jun kèm theo
+                                                                        một mã cào trúng thưởng mặt sau với nhiều phần quà thật xinh xắn và hấp dẫn!
+                                                                    </p>
+                                                                </div>
+                                                                <div>
+                                                                    <img src="Images/img_TT&uuDai/trang_1/h1.jpg" />
+                                                                    <p>
+                                                                        Cách thức tham gia chương trình cực kì đơn giản: Bước 1: Mua ngay sản phẩm Popcorn
+                                                                        Tea Latte – thức uống chỉ dành riêng cho sinh nhật Gong Cha với giá khuyến mãi chỉ
+                                                                        45.000đ Bước 2: Nhận ngay cup sleeve Park Seo Jun với lớp cào tráng bạc ở mặt sau
+                                                                    </p>
+                                                                </div>
+                                                                <div>
+                                                                    <img src="Images/img_TT&uuDai/trang_1/h2.png" />
+                                                                    <p class="text-left">
+                                                                        Bước 3: Cào lớp tráng bạc để thấy ngay QR code ở dưới lớp tráng bạc. Dùng ứng dụng
+                                                                        scan QR code (trên Facebook; Zalo…) và bạn sẽ tìm thấy ngay thông điệp trúng thưởng may mắn
+                                                                    </p>
+                                                                    <p class="text-left">
+                                                                        Bước 4: Đưa nhân viên cashier xem màn hình thông báo trúng thưởng và điền một số thông tin
+                                                                        theo yêu cầu để đổi ngay quà tặng xinh xắn từ Gong Cha
+                                                                    </p>
+                                                                    <p class="text-left"> Lưu ý:</p>
+                                                                    <p>
+                                                                        - Chương trình chỉ áp dụng khi mua sản phẩm Popcorn Tea Latte tại cửa hàng hoặc sử dụng dịch vụ
+                                                                        Gong Cha Delivery từ cửa hàng
+                                                                    </p>
+                                                                    <p class="text-left">
+                                                                        - Khách hàng bắt buộc đổi quà tại cửa hàng mình đã mua sản phẩm Popcorn Tea Latte
+                                                                    </p>
+                                                                    <p class="text-left">
+                                                                        - Chương trình chỉ áp dụng tại khu vực TP.HCM (không áp dụng cửa hàng Phan Xích Long)
+                                                                    </p>
+                                                                    <p class="text-left">- Thời gian áp dụng chương trình: 11/10/2018 – 31/10/2018</p>
+
+                                                                    <p class="text-left">- Chương trình có thể kết thúc sớm hơn dự kiến vì số lượng quà tặng có hạn</p>
+
+                                                                    <p class="text-left">
+                                                                        - Không áp dụng khi mua sản phẩm qua các kênh giao hàng Now.vn; Grab Food; Lixi App; Lala...
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                Link to open the modal
+                                            </div>
+                                            <div class="border-bottom pull-left open-popup hover" style="padding-bottom: 10px;" rel="modal:open" href="#ex1">
+                                                <a href="#ex7" rel="modal:open" class="cat">
+                                                    Tin Tức
+                                                </a>
+                                            </div>
+                                            <div id="chiTiet">
+                                                <a rel="modal:open" href="#ex1" class="pull-right open-popup hover" title="MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ">
+                                                    CHI TIẾT <i class="fa fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a rel="modal:open" href="#ex7" class="pull-left open-popup hover" style="
+    width: 289px;">
+                                                    GONG CHA RA MẮT CHƯƠNG TRÌNH THÀNH VIÊN TRÊN ỨNG…
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div id="bênTrai" class="post-excerpt" id="chinhpading" style=" padding-top: 35px; margin-right: 30px;">
+                                            <p style=" max-width: 357px; padding-top: 15px;">
+                                                ĐIỀU KHOẢN VÀ ĐIỀU KIỆN CHƯƠNG TRÌNH THÀNH VIÊN GONG CHA Chương trình thành viên qua ứng dụng Gong Cha…
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--hinh 2-->
+                                <div class="col-sm-4">
+                                    <div>
+                                        <div>
+
+                                            <a href="#ex8" rel="modal:open">
+                                                <img nam="xin chào việt nam" id="xinChao" src="Images/img_TT&uuDai/hang3_hinh2.jpg" />
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div id="trang">
+                                        <div id="chinhpading">
+                                            <!--close-->
+                                            <div id="ex8" class="modal">
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <div>
+                                                                <div>
+                                                                    <h5>
+                                                                        MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ
+
+                                                                        <hr />
+
+                                                                    </h5>
+                                                                </div>
+                                                                <div>
+                                                                    <h6>
+                                                                        “MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ”
+                                                                    </h6>
+                                                                </div>
+                                                                <div id="doGiua">
+                                                                    Mừng sinh nhật lần thứ 4 của thương hiệu Gong Cha tại Việt Nam, Gong Cha mang đến cho
+                                                                    Fan nhiều ưu đãi hấp dẫn như một lời tri ân dành cho khách hàng đã yêu mến Gong Cha trong
+                                                                    suốt bốn năm hoạt động vừa qua.
+                                                                </div>
+                                                                <div>
+                                                                    <p>
+                                                                        Hoạt động thú vị nhất phải kể đến đó là chương trình “Mừng sinh nhật Gong Cha –
+                                                                        Săn Oppa về nhà”, được diễn ra đúng vào ngày sinh nhật Gong Cha (11/10/2018). Đến
+                                                                        với cửa hàng vào ngày sinh nhật Gong Cha, khách hàng sẽ có cơ hội mua thức uống
+                                                                        Popcorn Tea Latte với giá ưu đãi cực “hot” – chỉ 45.000đ. Ngoài ra, bạn sẽ còn được
+                                                                        nhận ngay cup sleeve (bọc ly giấy) có hình ảnh đại sứ thương hiệu Park Seo Jun kèm theo
+                                                                        một mã cào trúng thưởng mặt sau với nhiều phần quà thật xinh xắn và hấp dẫn!
+                                                                    </p>
+                                                                </div>
+                                                                <div>
+                                                                    <img src="Images/img_TT&uuDai/trang_1/h1.jpg" />
+                                                                    <p>
+                                                                        Cách thức tham gia chương trình cực kì đơn giản: Bước 1: Mua ngay sản phẩm Popcorn
+                                                                        Tea Latte – thức uống chỉ dành riêng cho sinh nhật Gong Cha với giá khuyến mãi chỉ
+                                                                        45.000đ Bước 2: Nhận ngay cup sleeve Park Seo Jun với lớp cào tráng bạc ở mặt sau
+                                                                    </p>
+                                                                </div>
+                                                                <div>
+                                                                    <img src="Images/img_TT&uuDai/trang_1/h2.png" />
+                                                                    <p class="text-left">
+                                                                        Bước 3: Cào lớp tráng bạc để thấy ngay QR code ở dưới lớp tráng bạc. Dùng ứng dụng
+                                                                        scan QR code (trên Facebook; Zalo…) và bạn sẽ tìm thấy ngay thông điệp trúng thưởng may mắn
+                                                                    </p>
+                                                                    <p class="text-left">
+                                                                        Bước 4: Đưa nhân viên cashier xem màn hình thông báo trúng thưởng và điền một số thông tin
+                                                                        theo yêu cầu để đổi ngay quà tặng xinh xắn từ Gong Cha
+                                                                    </p>
+                                                                    <p class="text-left"> Lưu ý:</p>
+                                                                    <p>
+                                                                        - Chương trình chỉ áp dụng khi mua sản phẩm Popcorn Tea Latte tại cửa hàng hoặc sử dụng dịch vụ
+                                                                        Gong Cha Delivery từ cửa hàng
+                                                                    </p>
+                                                                    <p class="text-left">
+                                                                        - Khách hàng bắt buộc đổi quà tại cửa hàng mình đã mua sản phẩm Popcorn Tea Latte
+                                                                    </p>
+                                                                    <p class="text-left">
+                                                                        - Chương trình chỉ áp dụng tại khu vực TP.HCM (không áp dụng cửa hàng Phan Xích Long)
+                                                                    </p>
+                                                                    <p class="text-left">- Thời gian áp dụng chương trình: 11/10/2018 – 31/10/2018</p>
+
+                                                                    <p class="text-left">- Chương trình có thể kết thúc sớm hơn dự kiến vì số lượng quà tặng có hạn</p>
+
+                                                                    <p class="text-left">
+                                                                        - Không áp dụng khi mua sản phẩm qua các kênh giao hàng Now.vn; Grab Food; Lixi App; Lala...
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Link to open the modal-->
+                                            </div>
+                                            <div class="border-bottom pull-left open-popup hover" style="padding-bottom: 10px;" rel="modal:open" href="#ex1">
+                                                <a href="#ex8" rel="modal:open" class="cat">
+                                                    Tin Tức
+                                                </a>
+                                            </div>
+                                            <div id="chiTiet">
+                                                <a rel="modal:open" href="#ex8" class="pull-right open-popup hover" title="MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ">
+                                                    CHI TIẾT <i class="fa fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a rel="modal:open" href="#ex8" class="pull-left open-popup hover" style="
+    width: 289px;">
+                                                    CÙNG ĐIỂM QUA 3 MÓN XOÀI HẤP DẪN GIẢI NHIỆT…
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div id="bênTrai" class="post-excerpt" id="chinhpading" style=" padding-top: 35px; margin-right: 30px;">
+                                            <p style=" max-width: 357px; padding-top: 15px;">
+                                                TĂNG CƯỜNG SỨC KHOẺ CÙNG MATCHA VÀ XOÀI CỦA GONG CHA   Từ lâu món thức uống từ Matcha đã…
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--hinh 3 dòng 2-->
+                                <div class="col-sm-4">
+                                    <div>
+                                        <div>
+
+                                            <a href="#ex9" rel="modal:open">
+
+                                                <img src="Images/img_TT&uuDai/hang3_hinh3.jpg" />
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div id="trang">
+                                        <div id="chinhpading">
+                                            <!--close-->
+                                            <div id="ex9" class="modal">
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <div>
+                                                                <div>
+                                                                    <h5>
+                                                                        MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ
+
+                                                                        <hr />
+
+                                                                    </h5>
+                                                                </div>
+                                                                <div>
+                                                                    <h6>
+                                                                        “MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ”
+                                                                    </h6>
+                                                                </div>
+                                                                <div id="doGiua">
+                                                                    Mừng sinh nhật lần thứ 4 của thương hiệu Gong Cha tại Việt Nam, Gong Cha mang đến cho
+                                                                    Fan nhiều ưu đãi hấp dẫn như một lời tri ân dành cho khách hàng đã yêu mến Gong Cha trong
+                                                                    suốt bốn năm hoạt động vừa qua.
+                                                                </div>
+                                                                <div>
+                                                                    <p>
+                                                                        Hoạt động thú vị nhất phải kể đến đó là chương trình “Mừng sinh nhật Gong Cha –
+                                                                        Săn Oppa về nhà”, được diễn ra đúng vào ngày sinh nhật Gong Cha (11/10/2018). Đến
+                                                                        với cửa hàng vào ngày sinh nhật Gong Cha, khách hàng sẽ có cơ hội mua thức uống
+                                                                        Popcorn Tea Latte với giá ưu đãi cực “hot” – chỉ 45.000đ. Ngoài ra, bạn sẽ còn được
+                                                                        nhận ngay cup sleeve (bọc ly giấy) có hình ảnh đại sứ thương hiệu Park Seo Jun kèm theo
+                                                                        một mã cào trúng thưởng mặt sau với nhiều phần quà thật xinh xắn và hấp dẫn!
+                                                                    </p>
+                                                                </div>
+                                                                <div>
+                                                                    <img src="Images/img_TT&uuDai/trang_1/h1.jpg" />
+                                                                    <p>
+                                                                        Cách thức tham gia chương trình cực kì đơn giản: Bước 1: Mua ngay sản phẩm Popcorn
+                                                                        Tea Latte – thức uống chỉ dành riêng cho sinh nhật Gong Cha với giá khuyến mãi chỉ
+                                                                        45.000đ Bước 2: Nhận ngay cup sleeve Park Seo Jun với lớp cào tráng bạc ở mặt sau
+                                                                    </p>
+                                                                </div>
+                                                                <div>
+                                                                    <img src="Images/img_TT&uuDai/trang_1/h2.png" />
+                                                                    <p class="text-left">
+                                                                        Bước 3: Cào lớp tráng bạc để thấy ngay QR code ở dưới lớp tráng bạc. Dùng ứng dụng
+                                                                        scan QR code (trên Facebook; Zalo…) và bạn sẽ tìm thấy ngay thông điệp trúng thưởng may mắn
+                                                                    </p>
+                                                                    <p class="text-left">
+                                                                        Bước 4: Đưa nhân viên cashier xem màn hình thông báo trúng thưởng và điền một số thông tin
+                                                                        theo yêu cầu để đổi ngay quà tặng xinh xắn từ Gong Cha
+                                                                    </p>
+                                                                    <p class="text-left"> Lưu ý:</p>
+                                                                    <p>
+                                                                        - Chương trình chỉ áp dụng khi mua sản phẩm Popcorn Tea Latte tại cửa hàng hoặc sử dụng dịch vụ
+                                                                        Gong Cha Delivery từ cửa hàng
+                                                                    </p>
+                                                                    <p class="text-left">
+                                                                        - Khách hàng bắt buộc đổi quà tại cửa hàng mình đã mua sản phẩm Popcorn Tea Latte
+                                                                    </p>
+                                                                    <p class="text-left">
+                                                                        - Chương trình chỉ áp dụng tại khu vực TP.HCM (không áp dụng cửa hàng Phan Xích Long)
+                                                                    </p>
+                                                                    <p class="text-left">- Thời gian áp dụng chương trình: 11/10/2018 – 31/10/2018</p>
+
+                                                                    <p class="text-left">- Chương trình có thể kết thúc sớm hơn dự kiến vì số lượng quà tặng có hạn</p>
+
+                                                                    <p class="text-left">
+                                                                        - Không áp dụng khi mua sản phẩm qua các kênh giao hàng Now.vn; Grab Food; Lixi App; Lala...
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Link to open the modal-->
+                                            </div>
+                                            <div class="border-bottom pull-left open-popup hover" style="padding-bottom: 10px;" rel="modal:open" href="#ex1">
+                                                <a href="#ex9" rel="modal:open" class="cat">
+                                                    Tin Tức
+                                                </a>
+                                            </div>
+                                            <div id="chiTiet">
+                                                <a rel="modal:open" href="#ex9" class="pull-right open-popup hover" title="MỪNG SINH NHẬT GONG CHA – SĂN OPPA VỀ NHÀ">
+                                                    CHI TIẾT <i class="fa fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a rel="modal:open" href="#ex9" class="pull-left open-popup hover" style="
+    width: 289px;">
+                                                    RA MẮT DÒNG SẢN PHẨM DÂU TÂY CỰC NGON VÀ…
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div id="bênTrai" class="post-excerpt" id="chinhpading" style=" padding-top: 35px; margin-right: 30px;">
+                                            <p style=" max-width: 357px; padding-top: 15px;">
+                                                ĐẬP TAN CƠN KHÁT MÙA HÈ VỚI THỨC UỐNG DÂU TUYỆT VỜI Trái dâu tây được mệnh danh là nữ…
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--kết thúc dòng 2-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--kết thúc dòng 3-->
+                <div class="container">
+                    <div class="container" id="xemThem">
+                        <a href="#" class="hover">
+                            <button class="text-center hover">
+                                XEM THÊM
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--menucuoi-->
+    <div id="to">
+        <div class="container-fluid" id="conter">
+            <div class="row">
+                <div class="col-sm-3" id="cotkeCuoi">
+                    <a href="=#">
+                        <img src="Images/img_TT&uuDai/logocuoi.png" />
+                    </a>
+                </div>
+                <div class="col-sm-9" id="cotCuoi">
+                    <nav class="navbar navbar-default" id="navCuoi">
+                        <div class="container-fluid">
+
+                            <ul class="nav navbar-nav">
+                                <li><a href="../do_an_web/gioiThieu.html" style="border-right: 1px solid #333;">Giới Thiệu</a></li>
+                                <li><a href="../do_an_web/tintuc_uudai.html" style="border-right: 1px solid #333;">Tin Tức & Ưu Đãi</a></li>
+                                <li><a href="../do_an_web/thuc_Don.html" style="border-right: 1px solid #333;">Thực Đơn</a></li>
+                                <li><a href="#" style="border-right: 1px solid #333;">Tuyển Dụng</a></li>
+                                <li><a href="#" style="border-right: 1px solid #333;">Liên Hệ</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div id="hopThu">
+                        <span class="mails">
+                            <i class="fa fa-envelope">
+                            </i>
+                            <a href="mailto:info@gongcha.com.vn">
+                                info@gongcha.com.vn
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end page-->
+    <a href="#"><i class="fa fa fa-angle-double-up" id="cuon" aria-hidden="true"></i></a>
+
+</body>
+</html>

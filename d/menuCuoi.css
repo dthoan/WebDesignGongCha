@@ -1,0 +1,88 @@
+#home {
+            height: 231px;
+            padding-top: 28px;
+        }
+
+        .nav-tabs {
+            border-bottom: snow;
+        }
+
+        #footer ul li a {
+            font-weight: 600;
+            color: #333;
+            font-size: 16px;
+            text-transform: capitalize;
+            font-family: "Myriad Pro",PTSansCaptionRegular, arial, helvetica, sans-serif;
+            float: left;
+            border-bottom: none;
+            border-right: 1px solid #333;
+            line-height: 1.42857143;
+        }
+
+        .nav > li > a {
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+            background-color: transparent;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul > li > A {
+            padding: 0 5px;
+            float: left;
+            border-bottom: none;
+            font-size: 20px;
+            font-family: auto;
+        }
+
+        .fa-envelope {
+            color: #771420;
+        }
+
+#navCuoi {
+    margin-left: 0px;
+   
+    ;
+}
+
+#cotCuoi {
+    padding-left: 0px;
+   
+    
+}
+
+        #cotkeCuoi {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+#hopThu {
+    padding-left: 25px;
+    float: left;
+}
+
+#conter {
+    padding-top: 30px;
+    
+}
+
+        .col-sm-3 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        img{
+            height:100%;
+            width:100%;
+        }
+.container-fluid{
+    text-align:center;
+}
+.col-sm-9 {
+    min-height:132px;
+    max-height:525px;
+    
+}
+

@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="cssStyles/bootstrap.min.css" />
+    <script type="text/javascript" src="jScripts/jquery.min.js"></script>
+    <script type="text/javascript" src="jScripts/bootstrap.min.js"></script>
+    <link href="cssStyles/homeCSS.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link href="cssStyles/font-awesome.min.css" rel="stylesheet" />
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link href="d/menuCuoi.css" rel="stylesheet" />
+    <link href="d/menu.css" rel="stylesheet" />
+    <link href="d/cuon.css" rel="stylesheet" />
+    <script type="text/javascript">
+        (function () {
+            $('#cuon').click(function () {
+                $('body,html').animate({ scrollTop: 0 }, 600);
+                return false;
+            })
+        })
+            (jQuery);
+        $(window).scroll(function () {
+            if ($(window).scrollTop() == 0) {
+                $('#cuon').stop(false, true).fadeOut(300);
+            } else {
+                $('#cuon').stop(false, true).fadeIn(300);
+            }
+        });
+    </script>
+    <title>
+        Sáu bước đê order trà sữa
+    </title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://gongcha.com.vn/wp-content/uploads/2018/02/Trà-sữa-Oolong-3J-1.png" />
+    <style>
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #full {
+            background: #fff4f8;
+        }
+
+        #conter {
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="menudau" class="container">
+        <div class="container">
+            <nav class="navbar navbar-default">
+
+                <div class="navbar-header">
+                    <img id="logodau" nama="logo gong cha" class="navbar-brand" src="Images/img_trangchu/logo.png" />
+                </div>
+                <div id="giuaMenu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../do_an_web/tranh_Chu.html">TRANG CHỦ</a></li>
+                        <li><a href="../do_an_web/gioiThieu.html"><span></span>GIỚI THIỆU</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">THỰC ĐƠN<span></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../do_an_web/thuc_Don.html">Món mới</a></li>
+                                <li><a href="../do_an_web/thuc_Don.html" ">Thức uống theo mùa</a></li>
+                                <li><a href="../do_an_web/thuc_Don.html" ">Menu hiện tại</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../do_an_web/tintuc_uudai.html">TIN TỨC & ƯU ĐÃI</a></li>
+                        <li><a href="../do_an_web/cua_hang.html">CỬA HÀNG</a></li>
+                        <li><a href="#">TUYỂN DỤNG</a></li>
+                        <li><a href="#">LIÊN HỆ</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-certer">
+                        <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                    <!--nút search-->
+                    <div class="search-btn-wrap">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a id="search" name="nút search" href="#" class="btn-search">
+                                    <span class="fa fa-search">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--menu dau-->
+    <div id="full">
+
+
+        <div>
+            <div id="all" class="container">
+                <div class="section text-center">
+                    <img src="Images/img_6buoc/logo.jpg" />
+                </div>
+                <div id="hinh">
+                    <!--bước 1-->
+                    <div class="row section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h3>Bước 1: CHỌN THỨC UỐNG</h3>
+                                    <h3>STEP 1: CHOOSE YOUR DRINK</h3>
+                                </div>
+                                <div class="col-sm-8">
+                                    <img class="buoc" src="Images/img_6buoc/buoc1.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--bước 2-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h3>Bước 2: CHỌN SIZE LY</h3>
+                                <h3>STEP 2: CHOOSE CUP SIZE</h3>
+                            </div>
+                            <div class="col-sm-8">
+                                <img class="buoc" src="Images/img_6buoc/buoc2.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--bước 3-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h3>Bước 3: CHỌN MỨC ĐƯỜNG</h3>
+                                <h3>
+                                    STEP 3: CHOOSE SUGAR LEVEL
+                                </h3>
+                            </div>
+                            <div class="col-sm-8">
+                                <img class="buoc" src="Images/img_6buoc/buoc3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--bước 4-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h3>Bước 4: CHỌN MỨC ĐÁ</h3>
+                                <h3>
+                                    STEP 4: CHOOSE ICE LEVEL
+                                </h3>
+                            </div>
+                            <div class="col-sm-8">
+                                <img class="buoc" src="Images/img_6buoc/buoc4.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--bước 5-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h3>Bước 5: CHỌN TOPPING</h3>
+                                <h3>
+                                    STEP 5: CHOOSE TOPPING
+                                </h3>
+                            </div>
+                            <div class="col-sm-8">
+                                <img class="buoc" src="Images/img_6buoc/buoc5.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--bước 6-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h3>Bước 6: THƯỞNG THỨC NGAY</h3>
+                                <h3>
+                                    STEP 6: ENJOY!
+                                </h3>
+                            </div>
+                            <div class="col-sm-8">
+
+                                <img class="buoc" src="Images/img_6buoc/buoc6.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--menucuoi-->
+   
+    <div id="to">
+        <div class="container-fluid" id="conter">
+            <div class="row">
+                <div class="col-sm-3" id="cotkeCuoi">
+                    <a href="=#">
+                        <img src="Images/img_TT&uuDai/logocuoi.png" />
+                    </a>
+                </div>
+                <div class="col-sm-9" id="cotCuoi">
+                    <nav class="navbar navbar-default" id="navCuoi">
+                        <div class="container-fluid">
+
+                            <ul class="nav navbar-nav">
+                                <li><a href="../do_an_web/gioiThieu.html" style="border-right: 1px solid #333;">Giới Thiệu</a></li>
+                                <li><a href="../do_an_web/tintuc_uudai.html" style="border-right: 1px solid #333;">Tin Tức & Ưu Đãi</a></li>
+                                <li><a href="../do_an_web/thuc_Don.html" style="border-right: 1px solid #333;">Thực Đơn</a></li>
+                                <li><a href="#" style="border-right: 1px solid #333;">Tuyển Dụng</a></li>
+                                <li><a href="#" style="border-right: 1px solid #333;">Liên Hệ</a></li>
+                            </ul>
+                        </div>
+                        <div id="hopThu">
+                            <span class="mails">
+                                <i class="fa fa-envelope">
+                                </i>
+                                <a href="mailto:info@gongcha.com.vn">
+                                    info@gongcha.com.vn
+                                </a>
+                            </span>
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--end page-->
+    
+
+    <a href="#"><i class="fa fa fa-angle-double-up" id="cuon" aria-hidden="true"></i></a>
+
+</body>
+</html>

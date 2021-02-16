@@ -1,0 +1,1264 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="cssStyles/bootstrap.min.css" />
+    <script type="text/javascript" src="jScripts/jquery.min.js"></script>
+    <script type="text/javascript" src="jScripts/bootstrap.min.js"></script>
+    <link href="cssStyles/homeCSS.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link href="cssStyles/font-awesome.min.css" rel="stylesheet" />
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link href="d/menuCuoi.css" rel="stylesheet" />
+    <link href="d/menu.css" rel="stylesheet" />
+    <link href="d/cuon.css" rel="stylesheet" />
+    <script type="text/javascript">
+        (function () {
+            $('#cuon').click(function () {
+                $('body,html').animate({ scrollTop: 0 }, 600);
+                return false;
+            })
+        })
+            (jQuery);
+        $(window).scroll(function () {
+            if ($(window).scrollTop() == 0) {
+                $('#cuon').stop(false, true).fadeOut(300);
+            } else {
+                $('#cuon').stop(false, true).fadeIn(300);
+            }
+        });
+
+    </script>
+
+    <title>
+        Thực Đơn
+    </title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://gongcha.com.vn/wp-content/uploads/2018/02/Trà-sữa-Oolong-3J-1.png" />
+    <style>
+        .center {
+            position: absolute;
+            top: 30%;
+            font-size: 18px;
+        }
+
+        .col-sm-4 img {
+            text-align: center !important;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            text-align: center !important;
+            display: block;
+        }
+
+        #ex1 {
+            display: block;
+            content: '';
+            width: 156px;
+            height: 156px;
+            background: url(images/p-hover.png) 0 0 no-repeat;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -78px 0 0 -78px;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            transition: all .01s;
+            text-indent: -9999px;
+            z-index: 10;
+            background-image: url('Images/img_thucDon/p-hover.png');
+        }
+
+
+
+        .container:hover #ex1 {
+            opacity: 1;
+        }
+
+
+        .ex2 {
+            display: block;
+            content: '';
+            width: 156px;
+            height: 156px;
+            background: url(images/p-hover.png) 0 0 no-repeat;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -78px 0 0 -78px;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            transition: all .01s;
+            text-indent: -9999px;
+            z-index: 10;
+            background-image: url('Images/img_thucDon/p-hover.png');
+        }
+
+
+
+        .container:hover #ex2 {
+            opacity: 1;
+        }
+
+        #sauchu {
+            background-color: #f5eee9;
+        }
+
+        p img {
+            width: 30px;
+        }
+
+        hr {
+            border: 2px solid #000000;
+        }
+
+        #ten {
+            background-color: #e5ded8;
+            padding-bottom: 1px;
+            padding-top: 1px;
+        }
+
+            #ten h1 {
+                text-align: center;
+                font-family: -webkit-pictograph;
+                font-size: 32px;
+                font-weight: 700;
+            }
+
+        a p:hover {
+            color: #949494;
+            text-decoration: none !important;
+            color: #b81f32;
+            font-family: cursive;
+        }
+
+        .col-sm-2 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #chuLon {
+            color: #771420;
+            font-family: monospace;
+            font-size: 23px;
+        }
+
+        .text-center p {
+            font-size: 17px;
+            margin-top: 10px;
+        }
+
+        #mong {
+            border: 1px solid #949494;
+        }
+
+        #banner {
+            padding-top: 2px;
+            min-height: 313px;
+        }
+
+        #sauchu #hangNgang {
+            padding-top: 46px;
+            padding-bottom: 54px;
+        }
+
+        #banner .center {
+            padding-left: 80px;
+        }
+
+            #banner .center h2 {
+                color: white;
+                font-weight: bolder;
+                font-size: 40px;
+            }
+
+            #banner .center p {
+                color: white;
+                padding-top: 10px;
+            }
+    </style>
+    <title></title>
+</head>
+<body>
+    <div id="menudau" class="container">
+        <div class="container">
+            <nav class="navbar navbar-default">
+
+                <div class="navbar-header">
+                    <img id="logodau" nama="logo gong cha" class="navbar-brand" src="Images/img_trangchu/logo.png" />
+                </div>
+                <div id="giuaMenu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../do_an_web/tranh_Chu.html">TRANG CHỦ</a></li>
+                        <li><a href="../do_an_web/gioiThieu.html"><span></span>GIỚI THIỆU</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="../do_an_web/thuc_Don.html">THỰC ĐƠN<span></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../do_an_web/thuc_Don.html">Món mới</a></li>
+                                <li><a href="../do_an_web/thuc_Don.html">Thức uống theo mùa</a></li>
+                                <li><a href="../do_an_web/thuc_Don.html">Menu hiện tại</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../do_an_web/tintuc_uudai.html">TIN TỨC & ƯU ĐÃI</a></li>
+                        <li><a href="../do_an_web/cua_hang.html">CỬA HÀNG</a></li>
+                        <li><a href="#">TUYỂN DỤNG</a></li>
+                        <li><a href="#">LIÊN HỆ</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-certer">
+                        <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                    <!--nút search-->
+                    <div class="search-btn-wrap">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a id="search" name="nút search" href="#" class="btn-search">
+                                    <span class="fa fa-search">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--banner-->
+    <div id="banner">
+
+        <img class="text-center" id="banner" src="Images/img_thucDon/banner-menu-4.jpg" style="width:100%; height:100%;" />
+
+        <div>
+            <div class="center">
+                <h2>
+                    MENU HIỆN TẠI
+                </h2>
+                <p>
+
+                    Giới thiệu thức uống hấp dẫn và đa dạng từ Gong Cha
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--6 cột chữ-->
+    <div id="sauchu">
+        <div class="container" id="hangNgang">
+            <div>
+                <hr />
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-2">
+                    <a> <p class="table-hover"><img src="Images/img_thucDon/catly.png" /> Thức uống đặc biệt Gong Cha</p></a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#traSua"> <p><img src="Images/img_thucDon/catly.png" /> Trà sữa</p></a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#thucUongSangTao"> <p><img src="Images/img_thucDon/catly.png" /> Trà nguyên chất</p></a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#thucUongSangTao"> <p><img src="Images/img_thucDon/catly.png" /> Thức uống sáng tạo</p></a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#thucUongDaXay"> <p><img src="Images/img_thucDon/catly.png" /> Thức uống đá xay</p></a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#topping"> <p><img src="Images/img_thucDon/catly.png" /> Topping</p></a>
+                </div>
+            </div>
+
+            <div>
+                <hr id="mong" />
+            </div>
+        </div>
+
+        <!--Thực đơn-->
+        <!--THỨC UỐNG ĐẶC BIỆT GONG CHA-->
+        <div class="container">
+
+            <div id="ten">
+                <h1>THỨC UỐNG ĐẶC BIỆT GONG CHA</h1>
+            </div>
+            <!--hàng 1-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="../do_an_web/thongTin_sp.html">
+                                    <img src="Images/img_thucDon/h1_hg1.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="../do_an_web/thongTin_sp.html" id="chuLon">
+                                    Trà Bí Đao Gong Cha
+                                </a>
+                                <p>
+                                    Trà Bí Đao Kem Sữa
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 1 hình 2-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="../do_an_web/hang1_hinh2.html">
+                                    <img src="Images/img_thucDon/h2_hg1.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="../do_an_web/hang1_hinh2.html" id="chuLon">
+                                    Trà Oolong Gong Cha
+                                </a>
+                                <p>
+                                    Trà Oolong Kem Sữa
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 1 hình 3-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="../do_an_web/hang1_hinh3.html">
+                                    <img src="Images/img_thucDon/h3_h1.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="../do_an_web/hang1_hinh3.html" id="chuLon">
+                                    Trà Alisan Gong Cha
+                                </a>
+                                <p>
+                                    Trà Alisan Kem Sữa
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--hàng 2-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="../do_an_web/hang2_hinh1.html">
+                                    <img src="Images/img_thucDon/h1_hg2.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="../do_an_web/hang2_hinh1.html" id="chuLon">
+                                    Trà Earl Grey Gong Cha
+                                </a>
+                                <p>
+                                    Trà Earl Grey Kem Sữa
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 1 hình 2-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="../do_an_web/hang2_hinh2.html">
+                                    <img src="Images/img_thucDon/h2_hg2.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="../do_an_web/hang2_hinh2.html" id="chuLon">
+                                    Trà Đen Gong Cha
+                                </a>
+                                <p>
+                                    Trà Đen Kem Sữa
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 1 hình 3-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="../do_an_web/hang2_hinh2.html">
+                                    <img src="Images/img_thucDon/h3_h1.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="../do_an_web/hang2_hinh2.html" id="chuLon">
+                                    Trà Xanh Gong Cha
+                                </a>
+                                <p>
+                                    Trà Xanh Kem Sữa
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--trà sữa-->
+            <div class="container">
+
+                <div id="ten">
+                    <h1 id="traSua">TRÀ SỮA</h1>
+                </div>
+
+
+
+                <!--hàng 1  trà sữa-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+                                    <a href="../do_an_web/ts_hang1_hinh1.html">
+                                        <img src="Images/img_thucDon/TS.png" style="margin-bottom: 25px;" />
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="../do_an_web/ts_hang1_hinh1.html" id="chuLon">
+                                        Trà Sữa Matcha Đậu Đỏ
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--hàng 1 hình 2 trà sữa-->
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+                                    <a href="../do_an_web/ts_hang1_hinh2.html">
+                                        <img src="Images/img_thucDon/TS_h2_hg1.png" style="margin-bottom: 25px;" />
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" id="chuLon">
+                                        Trà sữa Oolong 3J
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--hàng 1 hình 3 trà sữa-->
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+                                    <a href="../do_an_web/ts_hang1_hinh2.html">
+                                        <img src="Images/img_thucDon/TS_h3_1.png" style="margin-bottom: 25px;" />
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="../do_an_web/ts_hang1_hinh2.html" id="chuLon">
+                                        Trà Sữa Pudding Đậu Đỏ
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--hàng 2 trà sữa-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+                                    <a href="../do_an_web/ts_hang2_hinh1.html">
+                                        <img src="Images/img_thucDon/TS_1_2.png" style="margin-bottom: 25px;" />
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="../do_an_web/ts_hang2_hinh1.html" id="chuLon">
+                                        Trà Sữa Pudding Đậu Đỏ
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--hàng 1 hình 2 trà sữa-->
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+                                    <a href="../do_an_web/ts_hang2_hinh2.html">
+                                        <img src="Images/img_thucDon/TS_2_2.png" style="margin-bottom: 25px;" />
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="../do_an_web/ts_hang2_hinh2.html" id="chuLon">
+                                        Trà Sữa Chocolate
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--hàng 1 hình 3 trà sữa-->
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+                                    <a href="../do_an_web/ts_hang2_hinh3.html">
+                                        <img src="Images/img_thucDon/TS_3_3.png" style="margin-bottom: 25px;" />
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="../do_an_web/ts_hang2_hinh3.html" id="chuLon">
+                                        Trà Sữa Sương Sáo
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--hàng 3 trà sữa-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+                                    <a href="../do_an_web/ts_hang3_hinh1.html">
+                                        <img src="Images/img_thucDon/TS_3_3.png" style="margin-bottom: 25px;" />
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="../do_an_web/ts_hang3_hinh1.html" id="chuLon">
+                                        Trà Sữa Sương Sáo
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--hàng 3 hình 2 trà sữa-->
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+                                    <a href="#">
+                                        <img src="Images/img_thucDon/TS_1_3.png" style="margin-bottom: 25px;" />
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" id="chuLon">
+                                        Trà Sữa Hokkaido
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--hàng 3 hình 3 trà sữa-->
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+                                    <a href="#">
+
+                                        <img src="Images/img_thucDon/TS_3_3.png" style="margin-bottom: 25px;" />
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" id="chuLon">
+                                        Trà Sữa Sương Sáo
+                                    </a>
+                                    <p>
+                                        Trà Sữa Thạch Đen
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--hàng 4 trà sữa-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+                                    <a href="#">
+                                        <img src="Images/img_thucDon/TS_1_4.png" style="margin-bottom: 25px;" />
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" id="chuLon">
+                                        Trà Sữa Oolong
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--hàng 3 hình 2 trà sữa-->
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+                                    <a href="#">
+                                        <img src="Images/img_thucDon/TS_2_4.png" style="margin-bottom: 25px;" />
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" id="chuLon">
+                                        Trà Sữa Trà Đen
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--hàng 3 hình 3 trà sữa-->
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+                                    <a href="#">
+
+                                        <img src="Images/img_thucDon/TS_3_4.png" style="margin-bottom: 25px;" />
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" id="chuLon">
+                                        Trà Sữa Trà Xanh
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--hàng 5 trà sữa -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+                                    <a href="#">
+                                        <img src="Images/img_thucDon/TS_1_5.png" style="margin-bottom: 25px;" />
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" id="chuLon">
+                                        Trà Sữa Khoai Môn
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--hàng 3 hình 2 trà sữa-->
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+                                    <a href="#">
+                                        <img src="Images/img_thucDon/TS_3_4.png" style="margin-bottom: 25px;" />
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" id="chuLon">
+                                        Trà Sữa Trà Đen
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--thức uống sáng tạo -->
+            <div class="container">
+                <div id="ten">
+                    <h1 id="thucUongSangTao">THỨC UỐNG SÁNG TẠO</h1>
+                </div>
+            </div>
+            <!--hàng 1 thức uống sáng tạo-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+
+                                    <img src="Images/img_thucDon/thucunSangTao/hang1_hinh1.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    QQ Chanh Dây Trà Xanh
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 1 hình 2 thức uống sáng tạo-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/thucunSangTao/hang1_hinh2.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Chanh Ai-yu và Trân Châu Trắng
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 1 hình 3 thức uống sáng tạo-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/thucunSangTao/hang1_hinh3.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Đào Hồng Mận Hạt É
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--hàng 2 thức uống sáng tạo-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+
+                                    <img src="Images/img_thucDon/thucunSangTao/hang2_hinh1.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Trà Oolong Vải
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 2 hình 2 thức uống sáng tạo-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/thucunSangTao/hang2_hinh2.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Trà Alisan Vải
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 2 hình 3 thức uống sáng tạo-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/thucunSangTao/hang2_hinh3.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Trà Alisan Xoài
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--hàng 3 thức uống sáng tạo-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+
+                                    <img src="Images/img_thucDon/thucunSangTao/hang3_hinh1.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Trà Xanh Chanh Dây
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 3 hình 2 thức uống sáng tạo-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/thucunSangTao/hang3_hinh2.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Trà Alisan Chanh Dây
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 2 hình 3 thức uống sáng tạo-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/thucunSangTao/hang3_hinh3.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Trà Đen Đào
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--hàng 4 thức uống sáng tạo-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+
+                                    <img src="Images/img_thucDon/thucunSangTao/hang4_hinh1.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Trà Xanh Đào
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 2 hình 2 thức uống sáng tạo-->
+                    <!--hàng 2 hình 3 thức uống sáng tạo-->
+                </div>
+            </div>
+            <!--thức uống đá xay-->
+            <div class="container">
+                <div id="ten">
+                    <h1 id="thucUongDaXay">THỨC UỐNG ĐÁ XAY</h1>
+                </div>
+            </div>
+            <!--hàng 1 thức uống đá xay-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/thucuongDaXay/hang1_hinh1.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    QQ Chanh Dây Trà Xanh
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 1 hình 2 thức uống đá xay-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/thucuongDaXay/hang1_hinh2.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Khoai Môn Đá Xay
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 1 hình 3 thức uống đá xay-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/thucuongDaXay/hang1_hinh3.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Matcha Đá Xay
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--hang2 thức uống đá xay-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/thucuongDaXay/hang2_hinh1.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Yakult Đào Đá Xay
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 1 hình 2 thức uống đá xay-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/thucuongDaXay/hang2_hinh2.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Xoài Đá Xay
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 1 hình 3 thức uống đá xay-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/thucuongDaXay/hang1_hinh3.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Xoài Đá Xay
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--topping-->
+            <div class="container">
+                <div id="ten">
+                    <h1 id="topping">TOPPING</h1>
+                </div>
+            </div>
+            <!--hàng 1 topping-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/topping/hang1_hinh1.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Kem Sữa
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 1 hình 2 topping-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/topping/hang1_hinh2.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Nha Đam
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 1 hình 3 topping-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/topping/hang1_hinh3.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Hạt É
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--hang 2 topping-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/topping/hang2_hinh1.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Trân Châu Đen
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 2 hình 2 topping-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/topping/hang2_hinh2.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Thạch Nâu
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 2 hình 3 topping-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/topping/hang2_hinh3.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Thạch Trái Cây
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--hang 3 topping-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/topping/hang3_hinh1.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Sương Sáo
+                                </a>
+                                <p>
+                                    Thạch Đen
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 3 hình 2 topping-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/topping/hang3_hinh2.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Trân Châu Trắng
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 3 hình 3 topping-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/topping/hang3_hinh3.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Đậu Đỏ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--hang 4 topping-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/topping/hang4_hinh1.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Thạch Ai-yu
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 4 hình 2 topping-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/topping/hang4_hinh2.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Thạch Dừa
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 4 hình 3 topping-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/topping/hang4_hinh3.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Thạch Dừa
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--hang 5 topping-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/topping/haAng5_hinh1.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Combo 2 Loại Hạt
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 5 hình 2 topping-->
+                    <div class="col-sm-4">
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <img src="Images/img_thucDon/topping/hang5_hinh2.png" style="margin-bottom: 25px;" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" id="chuLon">
+                                    Combo 3 Loại Hạt
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hàng 5 hình 3 topping-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--menu cuối-->
+    <div id="to">
+        <div class="container-fluid" id="conter">
+            <div class="row">
+                <div class="col-sm-3" id="cotkeCuoi">
+                    <a href="../do_an_web/tranh_Chu.html">
+                        <img src="Images/img_TT&uuDai/logocuoi.png" />
+                    </a>
+                </div>
+                <div class="col-sm-9" id="cotCuoi">
+                    <nav class="navbar navbar-default" id="navCuoi">
+                        <div class="container-fluid">
+
+                            <ul class="nav navbar-nav">
+                                <li><a href="../do_an_web/gioiThieu.html" style="border-right: 1px solid #333;">Giới Thiệu</a></li>
+                                <li><a href="../do_an_web/tintuc_uudai.html" style="border-right: 1px solid #333;">Tin Tức & Ưu Đãi</a></li>
+                                <li><a href="../do_an_web/thuc_Don.html" style="border-right: 1px solid #333;">Thực Đơn</a></li>
+                                <li><a href="#" style="border-right: 1px solid #333;">Tuyển Dụng</a></li>
+                                <li><a href="#" style="border-right: 1px solid #333;">Liên Hệ</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div id="hopThu">
+                        <span class="mails">
+                            <i class="fa fa-envelope">
+                            </i>
+                            <a href="mailto:info@gongcha.com.vn">
+                                info@gongcha.com.vn
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--end page-->
+    <a href="#"><i class="fa fa fa-angle-double-up" id="cuon" aria-hidden="true"></i></a>
+
+
+
+</body>
+</html>

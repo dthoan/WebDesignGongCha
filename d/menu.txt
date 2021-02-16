@@ -1,0 +1,68 @@
+#menudau {
+            color: red;
+        }
+
+        #menudau {
+            height: 90px;
+            width: 1200px;
+        }
+
+        span.fa.fa-search {
+            display: block;
+            height: 90px;
+            width: 90px;
+            background: #b81f32;
+            color: #FFF;
+            font-size: 30px;
+            line-height: 90px;
+            text-align: center;
+        }
+
+        #search {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        #logodau {
+            height: 92px;
+            width: 90px;
+        }
+
+        .navbar.navbar-default {
+            display: inline-block;
+            padding: 0px 0px 0px 0px;
+            margin: 0px 74px 0px 74px;
+            width: 1143px;
+            font-weight: 700;
+            text-decoration: none;
+            border: aqua;
+            border-radius: 5px;
+            background-color: white;
+            background-position: 1.35em .94em;
+            background-size: 1em;
+            background-repeat: no-repeat;
+        }
+
+        #giuaMenu a {
+            font-size: 16px;
+            text-decoration: none !important;
+            text-transform: uppercase;
+            line-height: 55px;
+            display: block;
+            color: #171717;
+            font-weight: 600;
+            font-family: "Myriad Pro",PTSansCaptionRegular, arial, helvetica, sans-serif;
+        }
+
+        .fa.fa-instagram {
+            color: #949494;
+        }
+
+        .fa-facebook-official {
+            color: #949494;
+        }
+
+        a {
+           
+            color:#949494;
+        }
